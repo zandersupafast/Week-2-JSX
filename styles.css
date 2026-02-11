@@ -1,9 +1,15 @@
+/* ============================================
+   Base reset
+   ============================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* --------------------------------------------
+   Page layout
+   -------------------------------------------- */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +20,10 @@ body {
     padding: 20px;
 }
 
+/* --------------------------------------------
+   Cards container
+   Horizontal row, 24px gap, centered
+   -------------------------------------------- */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +33,10 @@ body {
     align-items: flex-start;
 }
 
+/* --------------------------------------------
+   Single pricing card
+   Fixed width 320px, min-height 380px
+   -------------------------------------------- */
 .card {
     display: flex;
     flex-direction: column;
@@ -39,6 +53,7 @@ body {
     flex-direction: column;
 }
 
+/* Card typography */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -75,6 +90,7 @@ body {
     margin: 16px 0px;
 }
 
+/* Feature list: no bullets, checkmark + text per row */
 .features-list {
     list-style: none;
     padding: 0;
@@ -95,6 +111,10 @@ body {
     font-weight: 400;
 }
 
+/* --------------------------------------------
+   Buttons
+   Pill shape; .secondary = light, .primary = dark
+   -------------------------------------------- */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -130,6 +150,10 @@ body {
     background-color: #333;
 }
 
+/* --------------------------------------------
+   Page label (top banner)
+   Fixed, centered, light shadow
+   -------------------------------------------- */
 .page-label {
     position: fixed;
     top: 16px;
