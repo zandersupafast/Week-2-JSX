@@ -4,10 +4,23 @@ A small teaching project so designers can compare **plain HTML** and **JSX** sid
 
 ## How to run
 
-No build step. Open the files in a browser:
+### No install (browser only)
+
+Open the files in a browser:
 
 - **HTML version:** open `index.html` (or run a simple local server if needed for CORS).
 - **JSX version:** open `jsx-version.html`. It loads React and Babel from CDNs and runs in the browser.
+
+### React app with Vite (`src/`)
+
+Requires [Node.js](https://nodejs.org/) 18 or newer.
+
+```bash
+npm install
+npm run dev
+```
+
+Then open the URL shown in the terminal (usually `http://localhost:5173`).
 
 ## Teaching points
 
